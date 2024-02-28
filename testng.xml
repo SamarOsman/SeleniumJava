@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+          
+	<parameter name="URL" value="http://demowebshop.tricentis.com"/>
+	<parameter name="Browser" value="Chrome"/>
+  <test thread-count="5" name="Regression">
+	  <parameter name="email" value="samar.osman@example1.test"/>
+	  <parameter name="pass" value="Tosca123!"/>
+	  <parameter name="invalidemail" value="Tos"/>
+	  <parameter name="invalidPass" value="Tos"/>
+	  <parameter name="firstName" value="Samar"/>
+	  <parameter name="lastName" value="Osman"/>
+	  <parameter name="newpass" value="T12345"/>
+	  <parameter name="discountCode" value="AutomationDiscount2"/>
+	  <parameter name="country" value="Egypt"/>
+	  <parameter name="city" value="Cairo"/>
+	  <parameter name="address" value="123"/>
+	  <parameter name="zip" value="1234"/>
+	  <parameter name="mob" value="01456"/>
+	  <parameter name="visaType" value="Visa"/>
+	  <parameter name="CardholderName" value="Barbara Gordon"/>
+	  <parameter name="cardNumber" value="4485564059489345"/>
+	  <parameter name="expirationDateMonth" value="4"/>
+	  <parameter name="expirationDateYear" value="2023"/>
+	  <parameter name="cardCode" value="123"/>
+	  
+		
+    <classes>
+      
+      
+      <class name="Registration"/>
+      <class name="Login"/>
+     <class name="ValidationMsgs"/>
+      <class name="OrderSuccessfullyProcessed"/>
+     
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
